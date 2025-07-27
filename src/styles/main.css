@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ================= Base Reset ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F9F5E3;
+  color: #231942;
+  padding-bottom: 60px;
+  line-height: 1.6;
+}
+
+/* ================= Global Links ================= */
+a {
+  text-decoration: none;
+  color: #9F86C0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FCD34D;
+}
+
+/* ================= Headings ================= */
+h1, h2, h3 {
+  color: #231942;
+}
+
+/* ================= Navbar ================= */
+.navbar {
+  background-color: #3A2E59;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #E0B1CB;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #F9F5E3;
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+.navbar a:hover {
+  color: #FCD34D;
+}
+
+/* ================= Home Page ================= */
+.home {
+  padding: 2rem;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #9F86C0;
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+/* ================= Category List ================= */
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.category-list li {
+  background: #E0B1CB;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-list li:hover {
+  background-color: #9F86C0;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ================= Book Grid ================= */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+/* ================= Book Card ================= */
+.book-card {
+  background: #fff;
+  border: 2px solid #5E548E;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  position: relative;
+  animation: fadeInUp 0.5s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.04) translateY(-8px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.15);
+}
+
+.book-card h3 {
+  font-size: 1.25rem;
+  color: #5E548E;
+  margin-bottom: 0.5rem;
+}
+
+.book-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+/* ================= Emoji Tag ================= */
+.emoji-tag {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 2.8rem;
+  opacity: 0.85;
+  filter: drop-shadow(1px 1px 1px #00000044);
+  pointer-events: none;
+}
+
+/* ================= Animation ================= */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ================= Book Details ================= */
+.book-details {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border: 2px solid #9F86C0;
+  border-radius: 16px;
+  background: #fff;
+}
+
+/* ================= Add Book Form ================= */
+.add-book-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  border: 2px solid #9F86C0;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.add-book-form h2 {
+  color: #5E548E;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.add-book-form input,
+.add-book-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #DDDAD0;
+  border-radius: 12px;
+  background: #F9F5E3;
+  color: #231942;
+  font-size: 1rem;
+}
+
+.add-book-form input:focus,
+.add-book-form textarea:focus {
+  outline: none;
+  border-color: #E0B1CB;
+}
+
+.add-book-form button {
+  background-color: #9F86C0;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-weight: bold;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.add-book-form button:hover {
+  background-color: #E0B1CB;
+  color: #231942;
+}
+
+.error {
+  color: #D32F2F;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ================= Search Input ================= */
+input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  border: 1px solid #DDDAD0;
+  background-color: #F9F5E3;
+  color: #231942;
+  font-size: 1rem;
+}
+
+/* ================= Not Found ================= */
+.not-found {
+  text-align: center;
+  padding: 5rem 2rem;
+  color: #5E548E;
+}
+
+.not-found h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+/* ================= Media Queries ================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .category-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-card,
+  .add-book-form,
+  .book-details {
+    padding: 1.2rem;
+  }
+}
