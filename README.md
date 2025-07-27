@@ -94,18 +94,6 @@ http://localhost:3000
 
 ---
 
-### 🧩 Available Routes
-
-| Route              | Description                         |
-| ------------------ | ----------------------------------- |
-| `/`                | Home page with welcome + categories |
-| `/books/:category` | Browse books by category            |
-| `/book/:id`        | Book details                        |
-| `/add-book`        | Add a new book                      |
-| `/does-not-exist`  | Custom 404 page                     |
-
----
-
 ### 🧠 Redux Usage
 
 * `booksSlice.js` holds book data
