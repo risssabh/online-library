@@ -76,6 +76,12 @@ npm install
 yarn install
 ```
 
+#### 3. 🔨 Install @reduxjs/toolkit and react-redux
+
+```bash
+npm install @reduxjs/toolkit react-redux
+```
+
 ---
 
 ### ▶️ Run the App
