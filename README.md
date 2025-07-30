@@ -15,7 +15,6 @@ A modern, responsive React application for browsing, searching, and adding books
 * ➕ Add your own books using a form with validation
 * 🧠 Redux for book state management
 * ❌ Custom 404 Page for undefined routes
-* 🎨 Stylish UI using CSS Grid, Flexbox, pastel emoji icons, and Gen Z–inspired theme
 
 ---
 
@@ -25,8 +24,6 @@ A modern, responsive React application for browsing, searching, and adding books
 * React Router DOM
 * Redux Toolkit
 * React Redux
-* Vanilla CSS (Responsive, Grid/Flexbox, Animations)
-* Emoji icons (📖✨)
 
 ---
 
